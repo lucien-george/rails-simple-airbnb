@@ -1,0 +1,18 @@
+.card {
+  width: 350px;
+  height: 225px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 20px;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+}
+
+.card-link {
+  text-decoration: none !important;
+}

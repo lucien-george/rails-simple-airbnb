@@ -14,7 +14,7 @@ puts 'Populating database...'
   Flat.create!(
     name: Faker::Superhero.name,
     address: Faker::Address.full_address,
-    description: Faker::Friends.quote,
+    description: Faker::Company.buzzword,
     price_per_night: rand(100..2000),
     number_of_guests: rand(1..10)
   )
