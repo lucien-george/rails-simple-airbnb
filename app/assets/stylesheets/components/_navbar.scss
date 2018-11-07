@@ -21,12 +21,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.form-control {
-  margin: 0 10px !important;
-}
-
-.btn-primary {
-  margin: 0 10px !important;
+  .form-control {
+    margin: 0 0 0 10px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+  .btn-primary {
+    margin: 0 10px 0 0 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
 }

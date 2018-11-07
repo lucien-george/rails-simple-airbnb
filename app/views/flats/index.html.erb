@@ -1,6 +1,9 @@
 <div class="wrapper">
   <div class="container">
     <h1>Flats</h1>
+    <% if Flat.count != @flats.count %>
+      <p>We found <%= @flats.count %> flats</p>
+    <% end %>
     <div class="row">
       <% @flats.each do |flat| %>
         <div class="col-xs-12 col-sm-6 col-md-4">
