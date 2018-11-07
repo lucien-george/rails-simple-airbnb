@@ -16,7 +16,8 @@ puts 'Populating database...'
     address: Faker::Address.full_address,
     description: Faker::Company.buzzword,
     price_per_night: rand(100..2000),
-    number_of_guests: rand(1..10)
+    number_of_guests: rand(1..10),
+    picture: "https://picsum.photos/350/225/?random"
   )
 end
 

@@ -16,3 +16,17 @@
     color: rgba(0, 0, 0, 1);
   }
 }
+
+.right-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-control {
+  margin: 0 10px !important;
+}
+
+.btn-primary {
+  margin: 0 10px !important;
+}

@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="container text-center">
+    <h1><%= @flat.name %></h1>
+    <div class="banner" style="background: url(<%= @flat.picture %>);"></div>
+    <p>Address: <%= @flat.address %></p>
+    <p>Description: <%= @flat.description %></p>
+    <p>Price per night: <%= @flat.price_per_night %></p>
+    <p>Number of guests: <%= @flat.number_of_guests %></p>
+    <div class="buttons">
+      <%= link_to "Edit flat details", edit_flat_path(@flat), class:"btn btn-primary" %>
+      <%= link_to "Delete flat", flat_path(@flat), method: :delete, class:"btn btn-primary" %>
+    </div>
+  </div>
+</div>

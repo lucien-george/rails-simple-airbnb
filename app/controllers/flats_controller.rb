@@ -1,5 +1,5 @@
 class FlatsController < ApplicationController
-  before_action :find_flat, only: %i[show edit]
+  before_action :find_flat, only: %i[show edit update destroy]
   def index
     @flats = Flat.all
   end
@@ -24,14 +24,13 @@ class FlatsController < ApplicationController
   end
 
   def edit
-    #form to edit flat info
+    # form to edit flat info
   end
 
   def update
     # updating flat and redirecting to show page
-    @flat = Flat.new(flat_params)
-    if @flat.save
-      redirect_to flats_path
+    if @flat.update(flat_params)
+      redirect_to flat_path(@flat)
     else
       render :edit
     end
@@ -39,6 +38,11 @@ class FlatsController < ApplicationController
 
   def destroy
     # deleting a flat
+    @flat.destroy
+    redirect_to flats_path
+  end
+
+  def search
   end
 
   private

@@ -6,6 +6,7 @@
   margin: 20px;
   color: white;
   background-size: cover;
+  padding: 10px;
   background-repeat: no-repeat;
   &:hover {
     transform: scale(1.1);
@@ -15,4 +16,10 @@
 
 .card-link {
   text-decoration: none !important;
+}
+
+.price-guests {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
