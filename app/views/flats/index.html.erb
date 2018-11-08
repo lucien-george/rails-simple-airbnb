@@ -2,7 +2,13 @@
   <div class="container">
     <h1>Flats</h1>
     <% if Flat.count != @flats.count %>
-      <p>We found <%= @flats.count %> flats</p>
+      <% if @flats.count.zero? %>
+        <p>We haven't found any flats matching your search.</p>
+      <% elsif @flats.count == 1 %>
+        <p>We found <%= @flats.count %> flat.</p>
+      <% else %>
+        <p>We found <%= @flats.count %> flats.</p>
+      <% end %>
     <% end %>
     <div class="row">
       <% @flats.each do |flat| %>
